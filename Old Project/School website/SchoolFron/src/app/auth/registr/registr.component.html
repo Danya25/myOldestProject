@@ -1,0 +1,42 @@
+<main class="main">
+  <div class="navigation">
+    <ul>
+      <li><a routerLink="../index">Главная</a></li>
+      <li><a routerLink="../news">Новости</a></li>
+      <li><a routerLink="../official">Сведения об образовательной организации</a></li>
+      <li><a routerLink="../galery">Галерея</a></li>
+      <li><a routerLink="../reviews">Общественное мнение</a></li>
+      <li><a routerLink="../advertisement">Объявления</a></li>
+      <li><a routerLink="../feedback">Обратная связь</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="authentication-block">
+      <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
+        <span *ngIf="formReg.get('login').touched && formReg.get('login').invalid"
+              class="form-help-text"
+        >
+        <span *ngIf="formReg.get('login')['errors']['required']">
+          Поле EMAIL должно быть заполнено
+        </span>
+      </span>
+        <div class="auth-window">
+          <p class="auth-title"><b>Регистрация</b></p>
+          <p>E-mail:</p>
+          <input
+            formControlName="login"
+            id="login"
+            placeholder="Введите почту"
+            type="text">
+          <p>Пароль:</p>
+          <input
+            formControlName="password"
+            id="password"
+            placeholder="Введите пароль"
+            type="text">
+          <button type="submit">Зарегистрироваться</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

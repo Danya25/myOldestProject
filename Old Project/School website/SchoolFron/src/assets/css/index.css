@@ -1,0 +1,150 @@
+.head {
+  height: auto;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #42815b; }
+  .head .header-title {
+    background-color: #bfddcd;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .head .header-title .header-logo {
+      display: flex;
+      align-items: flex-end; }
+      .head .header-title .header-logo p {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        color: #3a793c;
+        font-size: 18px;
+        font-weight: 700; }
+    .head .header-title .authentication {
+      height: auto;
+      width: auto;
+      background-color: whitesmoke;
+      padding: 5px;
+      margin-right: 15px;
+      border-radius: 2%; }
+      .head .header-title .authentication .user-button {
+        display: flex;
+        justify-content: center; }
+        .head .header-title .authentication .user-button span {
+          margin: 0 2px; }
+      .head .header-title .authentication a {
+        text-decoration: none;
+        color: #42815b; }
+        .head .header-title .authentication a:hover {
+          text-decoration: underline; }
+  .head .search-block {
+    height: 30px; }
+    .head .search-block button {
+      margin-top: 5px;
+      margin-right: 15px;
+      float: right;
+      border: 1px solid black; }
+    .head .search-block input {
+      margin-top: 5px;
+      float: right;
+      border: 1px solid black; }
+
+.main {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  margin-top: 10px;
+  padding-bottom: 100px; }
+  .main .navigation {
+    height: 100%;
+    width: 22%;
+    padding-bottom: 200px; }
+    .main .navigation ul {
+      width: 100%; }
+    .main .navigation li {
+      background-color: #77AD8E;
+      border: 1px solid #235723;
+      border-left: none;
+      border-bottom: none;
+      padding: 5px; }
+      .main .navigation li:last-child {
+        border-bottom: 1px solid #235723; }
+      .main .navigation li a {
+        text-decoration: none;
+        color: #fff; }
+    .main .navigation .links {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main .navigation .links img {
+        margin: 2px; }
+  .main .content {
+    padding-left: 30px;
+    width: 88%; }
+    .main .content .authentication-block {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      .main .content .authentication-block .auth-window {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 15px;
+        align-items: center;
+        border-radius: 2%;
+        background-color: #b2e2f5; }
+        .main .content .authentication-block .auth-window .auth-title {
+          margin-bottom: 10px;
+          font-size: 14px; }
+        .main .content .authentication-block .auth-window p {
+          margin: 5px auto; }
+        .main .content .authentication-block .auth-window button {
+          margin: 10px 0 5px 0;
+          padding: 3px 5px;
+          border: none;
+          background-color: whitesmoke; }
+          .main .content .authentication-block .auth-window button:hover {
+            background-color: #b9b9b9; }
+    .main .content .ad-images {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .main .content h1 {
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-size: 25px; }
+    .main .content a {
+      color: #42815b;
+      text-decoration: none; }
+      .main .content a:hover {
+        text-decoration: underline; }
+    .main .content .feedback {
+      width: 80%; }
+    .main .content .feedback-img {
+      margin-top: 50px;
+      border: 1px solid black; }
+    .main .content table td {
+      display: flex;
+      flex-direction: column; }
+      .main .content table td p {
+        font-size: 12px;
+        margin-bottom: 2px; }
+
+.footer {
+  width: 100%;
+  height: 25px;
+  padding: 3px;
+  background: #42815b;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer p {
+    color: white;
+    margin-left: 30px; }
+  .footer a {
+    color: white;
+    text-decoration: none; }
+    .footer a:hover {
+      color: #23d623;
+      text-decoration: underline; }
+
+/*# sourceMappingURL=index.css.map */

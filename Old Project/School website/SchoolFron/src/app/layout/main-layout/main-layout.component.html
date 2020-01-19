@@ -1,0 +1,26 @@
+<header class="head">
+  <div class="header-title">
+    <div class="header-logo">
+      <img src="../../../assets/images/header-logo.jpg" alt="header logo">
+      <p>Муниципальное автономное общеобразовательное учреждение<br>
+        Средняя общеобразовательная школа № 40 г. Томска</p>
+    </div>
+    <div class="authentication">
+      <div class="user-button" *ngIf="!isLogin;else unser">
+        <a routerLink="/auth/login">Вход</a>
+        <span>/</span>
+        <a routerLink="/auth/registration">Регистрация</a>
+      </div>
+      <ng-template #unser>
+        <div class="user-button">
+          <h3>Welcome</h3>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>
+<footer class="footer">
+  <p>МАОУ СОШ № 40</p>
+  <p>E-mail: <a href="#">School40tomsk@yandex.ru</a></p>
+</footer>
